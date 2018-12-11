@@ -6,13 +6,13 @@
         { "src": "apollo/index.js", "use": "@now/node-server" }
     ],
     "routes": [
-        { "src": "^/www/static/(.*)", "dest": "/static/$1" },
-        { "src": "^/www/favicon.ico", "dest": "/favicon.ico" },
-        { "src": "^/www/asset-manifest.json", "dest": "/asset-manifest.json" },
+        { "src": "^/www/static/(.*)", "dest": "/www/static/$1" },
+        { "src": "^/www/favicon.ico", "dest": "/www/favicon.ico" },
+        { "src": "^/www/asset-manifest.json", "dest": "/www/asset-manifest.json" },
         { "src": "^/www/manifest.json", "dest": "/manifest.json" },
-        { "src": "^/www/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/service-worker.js" },
-        { "src": "^/www/precache-manifest.(.*)", "dest": "/precache-manifest.$1" },
-        { "src": "^/www/(.*)", "dest": "/$1" },
+        { "src": "^/www/service-worker.js", "headers": {"cache-control": "s-maxage=0"}, "dest": "/www/service-worker.js" },
+        { "src": "^/www/precache-manifest.(.*)", "dest": "/www/precache-manifest.$1" },
+        { "src": "^/www/(.*)", "dest": "/www/$1" },
         { "src": "^/apollo/(.*)", "dest": "/apollo/$1" }
     ]
 }
