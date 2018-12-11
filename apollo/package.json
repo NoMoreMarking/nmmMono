@@ -2,7 +2,9 @@
   "name": "graphqlservice",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "react-scripts build",
+    "now-build": "react-scripts build"
   },
   "dependencies": {
     "apollo-server": "^2.2.6",
